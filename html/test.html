@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>jQuery UI Tabs - Default functionality</title>
+    <link rel="stylesheet" href="res/jquery-ui.css">
+    <script src="res/jquery-1.js"></script>
+    <script src="res/jquery-ui.js"></script>
+    <link rel="stylesheet" href="res/style.css">
+    <script type="text/javascript">
+      $(function() {
+      $( "#tabs" ).tabs();
+      });
+      window.onload = clear();
+      function clear() {
+        //document.write("hello");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
+      <ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+        <li aria-selected="true" aria-labelledby="ui-id-1" aria-controls="tabs-1" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active ui-state-focus"><a id="ui-id-1" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-1">Страница 1</a></li>
+        <li aria-selected="false" aria-labelledby="ui-id-2" aria-controls="tabs-2" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-2" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-2">Страница 2</a></li>
+        <li aria-selected="false" aria-labelledby="ui-id-3" aria-controls="tabs-3" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-3" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tabs-3">Страница 3</a></li>
+      </ul>
+      <div style="display: block;" aria-hidden="false" aria-expanded="true" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1" id="tabs-1">
+        <font size="7"><p>1</p></font>
+      </div>
+      <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" id="tabs-2">
+        <font size="7"><p>2</p></font>
+      </div>
+      <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3" id="tabs-3">
+        <font size="7"><p>3</p></font>
+      </div>
+    </div>
+</body></html>

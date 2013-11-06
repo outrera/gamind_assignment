@@ -1,0 +1,2 @@
+erl -compile main
+erl -pa ebin/ -noshell -s main start -s init stop
